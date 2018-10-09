@@ -6,7 +6,7 @@ function die() {
     // me.setY(60);
     // me.setZ(245);
 
-    me.setY(-150);
+    me.setY(-50);
 
     magik.ianuae(me);
 }
