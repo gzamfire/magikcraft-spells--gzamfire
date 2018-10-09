@@ -9,7 +9,7 @@ function wall() {
     magik.dixit("Blockade!");
     for (let yD = 0; yD <= 5; yD++) {
 
-        for (let xD = -5; xD <= 5; xD++) {
+        for (let xD = -5; xD <= 5; xD += 10) {
             
             for (let zD = -5; zD <= 5; zD++) {
                 
