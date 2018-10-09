@@ -1,0 +1,1 @@
+const m = magikcraft.io;
