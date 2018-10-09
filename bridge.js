@@ -63,27 +63,27 @@ function bridge() {
 
     magik.dixit("A bridge has appeared!");
 
-    // time bridge will exist in seconds
-    let bridgeTime = 60;
-    let timeLeft = bridgeTime - 1;
+    // // time bridge will exist in seconds
+    // let bridgeTime = 60;
+    // let timeLeft = bridgeTime - 1;
 
-    magik.doNTimes(() => {
-        magik.dixit(timeLeft + " seconds until bridge destruction.");
-        timeLeft--;
-    }, bridgeTime, 1000, () => {
-        magik.dixit("Goodbye bridge!");
-        for (let i = 0; i < allBlocks.length; i++) {
-            let thisBlockData = allBlocks[i];
+    // magik.doNTimes(() => {
+    //     magik.dixit(timeLeft + " seconds until bridge destruction.");
+    //     timeLeft--;
+    // }, bridgeTime, 1000, () => {
+    //     magik.dixit("Goodbye bridge!");
+    //     for (let i = 0; i < allBlocks.length; i++) {
+    //         let thisBlockData = allBlocks[i];
 
-            me.setX(thisBlockData.x);
-            me.setY(thisBlockData.y);
-            me.setZ(thisBlockData.z);
-            let thisBlockType = thisBlockData.blockMaterial;
+    //         me.setX(thisBlockData.x);
+    //         me.setY(thisBlockData.y);
+    //         me.setZ(thisBlockData.z);
+    //         let thisBlockType = thisBlockData.blockMaterial;
 
-            me.getBlock().setType(thisBlockType);
-        }
-        magik.dixit("The bridge is gone!");
-    });
+    //         me.getBlock().setType(thisBlockType);
+    //     }
+    //     magik.dixit("The bridge is gone!");
+    // });
 
 }
 
