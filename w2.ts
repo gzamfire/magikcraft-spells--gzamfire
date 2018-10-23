@@ -165,9 +165,9 @@ function wall2() {
     // zD in the plane, xD in the plane
     for (yD = floorHeight + 1; yD < roofHeight; yD++) {
 
-        for (let zD = -1 * wallWidth; zD <= wallWidth; zD++) {
+        for (let zD = -1 * wallWidth + 1; zD < wallWidth; zD++) {
                 
-            for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
+            for (let xD = -1 * wallWidth + 1; xD < wallWidth; xD++) {
                 
                 let me = magik.hic();
                 me.setX(me.getX() + xD);
