@@ -85,6 +85,28 @@ function wall2() {
         }
     }
 
+
+    /* BUILD THE ROOF */
+
+    let yD = 5;
+    // zD range -5 to 5 (height of wall)
+    // xD range -5 to 5 (width of wall)
+
+    for (let zD = -5; zD <= 5; zD++) {
+                
+        for (let xD = -5; xD <= 5; xD++) {
+            
+            let me = magik.hic();
+            me.setX(me.getX() + xD);
+            me.setY(me.getY() + yD);
+            me.setZ(me.getZ() + zD);
+
+            me.getBlock().setType(targetType);
+            // clearCount++;
+
+        }
+    }
+
     // if (original.toString() !== "AIR") {
     //     magik.dixit("This spell only works in the presence of air.");
     // } else {
