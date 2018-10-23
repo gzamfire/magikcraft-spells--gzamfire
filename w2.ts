@@ -8,6 +8,7 @@ function wall2() {
     const Material = magik.type('Material');
 
     let targetType = Material.GLASS;
+    let air = Material.AIR;
     const roofHeight = 5;
     const floorHeight = -1;
     const wallWidth = 5;
@@ -162,7 +163,21 @@ function wall2() {
     // yD range 0 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
     // zD in the plane, xD in the plane
-    for (yD = floorHeight; yD < roofHeight; yD++) {
+    for (yD = floorHeight + 1; yD < roofHeight; yD++) {
+
+        for (let zD = -1 * wallWidth; zD <= wallWidth; zD++) {
+                
+            for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
+                
+                let me = magik.hic();
+                me.setX(me.getX() + xD);
+                me.setY(me.getY() + yD);
+                me.setZ(me.getZ() + zD);
+
+                me.getBlock().setType(air);
+            }
+        }
+        
 
     }
 
