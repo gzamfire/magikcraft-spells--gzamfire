@@ -5,6 +5,10 @@ function wall2() {
     me.setY(me.getY() - 1);
     let original = magik.getPlugin().getServer().getWorlds()[0].getBlockAt(me).getType();
 
+    const Material = magik.type('Material');
+
+    let targetType = Material.FIRE;
+
     let xD = 5;
     // yD range 0 to 5 (height of wall)
     // zD range -5 to 5 (width of wall)
@@ -18,7 +22,7 @@ function wall2() {
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
 
-            me.getBlock().setType(original);
+            me.getBlock().setType(targetType);
             // clearCount++;
 
         }
@@ -37,7 +41,7 @@ function wall2() {
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
 
-            me.getBlock().setType(original);
+            me.getBlock().setType(targetType);
             // clearCount++;
 
         }
@@ -56,7 +60,7 @@ function wall2() {
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
 
-            me.getBlock().setType(original);
+            me.getBlock().setType(targetType);
             // clearCount++;
 
         }
@@ -75,7 +79,7 @@ function wall2() {
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
 
-            me.getBlock().setType(original);
+            me.getBlock().setType(targetType);
             // clearCount++;
 
         }
