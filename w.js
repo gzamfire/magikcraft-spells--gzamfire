@@ -8,9 +8,12 @@ function wall() {
 
     var blockUnderMe = me.getBlock().getType();
 
-    me.setY(me.getY() + 3);
+    
 
-    me.getBlock().setType(blockUnderMe);
+    magik.doNTimes(function() {
+        me.setY(me.getY() + 1);
+        me.getBlock().setType(blockUnderMe);
+    }, 20);
 }
 
 wall();
