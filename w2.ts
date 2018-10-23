@@ -7,7 +7,7 @@ function wall2() {
 
     const Material = magik.type('Material');
 
-    let targetType = Material.FIRE;
+    let targetType = Material.FIREBALL;
 
     let xD = 5;
     // yD range 0 to 5 (height of wall)
