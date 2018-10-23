@@ -24,6 +24,25 @@ function wall2() {
         }
     }
 
+    xD = -5;
+    // yD range 0 to 5 (height of wall)
+    // zD range -5 to 5 (width of wall)
+
+    for (let yD = 0; yD <= 5; yD++) {
+                
+        for (let zD = -5; zD <= 5; zD++) {
+            
+            let me = magik.hic();
+            me.setX(me.getX() + xD);
+            me.setY(me.getY() + yD);
+            me.setZ(me.getZ() + zD);
+
+            me.getBlock().setType(original);
+            // clearCount++;
+
+        }
+    }
+
     // if (original.toString() !== "AIR") {
     //     magik.dixit("This spell only works in the presence of air.");
     // } else {
