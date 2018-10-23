@@ -113,9 +113,8 @@ function wall2() {
 
     /* BUILD THE FLOOR */
 
-    yD = floorHeight;
-    // zD range -5 to 5 (height of wall)
-    // xD range -5 to 5 (width of wall)
+    yD = -3;
+    // zD in the plane, xD in the plane
 
     for (let zD = -1 * wallWidth; zD <= wallWidth; zD++) {
                 
