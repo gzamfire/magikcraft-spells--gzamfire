@@ -132,8 +132,6 @@ function wall2() {
         }
     }
 
-
-
     // if (original.toString() !== "AIR") {
     //     magik.dixit("This spell only works in the presence of air.");
     // } else {
@@ -162,24 +160,24 @@ function wall2() {
 
     // yD range 0 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
-    // // zD in the plane, xD in the plane
-    // for (yD = floorHeight + 1; yD < roofHeight; yD++) {
+    // zD in the plane, xD in the plane
+    for (yD = floorHeight + 1; yD < roofHeight; yD++) {
 
-    //     for (let zD = -1 * wallWidth + 1; zD < wallWidth; zD++) {
+        for (let zD = -1 * wallWidth + 1; zD < wallWidth; zD++) {
                 
-    //         for (let xD = -1 * wallWidth + 1; xD < wallWidth; xD++) {
+            for (let xD = -1 * wallWidth + 1; xD < wallWidth; xD++) {
                 
-    //             let me = magik.hic();
-    //             me.setX(me.getX() + xD);
-    //             me.setY(me.getY() + yD);
-    //             me.setZ(me.getZ() + zD);
+                let me = magik.hic();
+                me.setX(me.getX() + xD);
+                me.setY(me.getY() + yD);
+                me.setZ(me.getZ() + zD);
 
-    //             me.getBlock().setType(air);
-    //         }
-    //     }
+                me.getBlock().setType(air);
+            }
+        }
         
 
-    // }
+    }
 
 
 }
