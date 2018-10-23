@@ -31,7 +31,7 @@ function wall2() {
         }
     }
 
-    xD = -5;
+    xD = -1 * wallWidth;
     // yD range 0 to 5 (height of wall)
     // zD range -5 to 5 (width of wall)
 
@@ -50,7 +50,7 @@ function wall2() {
         }
     }
 
-    let zD = -5;
+    let zD = -1 * wallWidth;
     // yD range 0 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
 
@@ -69,7 +69,7 @@ function wall2() {
         }
     }
 
-    zD = 5;
+    zD = wallWidth;
     // yD range 0 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
 
@@ -112,7 +112,7 @@ function wall2() {
 
     /* BUILD THE FLOOR */
 
-    yD = -1;
+    yD = floorHeight;
     // zD range -5 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
 
