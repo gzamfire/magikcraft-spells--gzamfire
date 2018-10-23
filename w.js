@@ -13,7 +13,7 @@ function wall() {
     magik.doNTimes(function() {
         me.setY(me.getY() + 1);
         me.getBlock().setType(blockUnderMe);
-    }, 20);
+    }, 200);
 }
 
 wall();
