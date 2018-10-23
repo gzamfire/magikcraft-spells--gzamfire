@@ -8,7 +8,7 @@ function wall() {
 
     var blockUnderMe = me.getBlock().getType();
 
-    me.setY(me.getY() + 10);
+    me.setY(me.getY() + 3);
 
     me.getBlock().setType(blockUnderMe);
 
