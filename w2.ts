@@ -8,7 +8,7 @@ function wall2() {
     const Material = magik.type('Material');
 
     let targetType = Material.GLASS;
-    let air = Material.AIR;
+    let air = Material.GLASS;
     const roofHeight = 5;
     const floorHeight = -1;
     const wallWidth = 5;
