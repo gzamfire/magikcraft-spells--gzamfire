@@ -11,5 +11,6 @@ function wall() {
     me.setY(me.getY() + 3);
 
     me.getBlock().setType(blockUnderMe);
-
 }
+
+wall();
