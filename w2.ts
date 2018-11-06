@@ -130,6 +130,7 @@ function wall2() {
             me.getBlock().setType(targetType);
             // clearCount++;
             floorCount++;
+            magik.dixit(xD.toString());
             magik.dixit(floorCount.toString());
 
         }
