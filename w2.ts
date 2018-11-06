@@ -9,9 +9,9 @@ function wall2() {
 
     let targetType = Material.GLASS;
     let air = Material.AIR;
-    const roofHeight = 3;
+    const roofHeight = 2;
     const floorHeight = -1;
-    const wallWidth = 3;
+    const wallWidth = 2;
 
     let xD = wallWidth;
     // yD range 0 to 5 (height of wall)
@@ -92,45 +92,45 @@ function wall2() {
 
     /* BUILD THE ROOF */
 
-    // let yD = roofHeight;
-    // // zD range -5 to 5 (height of wall)
-    // // xD range -5 to 5 (width of wall)
+    let yD = roofHeight;
+    // zD range -5 to 5 (height of wall)
+    // xD range -5 to 5 (width of wall)
 
-    // for (let zD = -1 * wallWidth; wallWidth <= 5; zD++) {
+    for (let zD = -1 * wallWidth; wallWidth <= 5; zD++) {
                 
-    //     for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
+        for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
             
-    //         let me = magik.hic();
-    //         me.setX(me.getX() + xD);
-    //         me.setY(me.getY() + yD);
-    //         me.setZ(me.getZ() + zD);
+            let me = magik.hic();
+            me.setX(me.getX() + xD);
+            me.setY(me.getY() + yD);
+            me.setZ(me.getZ() + zD);
 
-    //         me.getBlock().setType(targetType);
-    //         // clearCount++;
+            me.getBlock().setType(targetType);
+            // clearCount++;
 
-    //     }
-    // }
+        }
+    }
 
     /* BUILD THE FLOOR */
 
-    // yD = floorHeight;
-    // // zD range -5 to 5 (height of wall)
-    // // xD range -5 to 5 (width of wall)
+    yD = floorHeight;
+    // zD range -5 to 5 (height of wall)
+    // xD range -5 to 5 (width of wall)
 
-    // for (let zD = -1 * wallWidth; wallWidth <= 5; zD++) {
+    for (let zD = -1 * wallWidth; wallWidth <= 5; zD++) {
                 
-    //     for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
+        for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
             
-    //         let me = magik.hic();
-    //         me.setX(me.getX() + xD);
-    //         me.setY(me.getY() + yD);
-    //         me.setZ(me.getZ() + zD);
+            let me = magik.hic();
+            me.setX(me.getX() + xD);
+            me.setY(me.getY() + yD);
+            me.setZ(me.getZ() + zD);
 
-    //         me.getBlock().setType(targetType);
-    //         // clearCount++;
+            me.getBlock().setType(targetType);
+            // clearCount++;
 
-    //     }
-    // }
+        }
+    }
 
     // if (original.toString() !== "AIR") {
     //     magik.dixit("This spell only works in the presence of air.");
@@ -158,7 +158,7 @@ function wall2() {
 
     // }
 
-    let yD;
+
     // yD range 0 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
     // zD in the plane, xD in the plane
