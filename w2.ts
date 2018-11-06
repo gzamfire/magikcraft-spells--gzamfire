@@ -117,26 +117,26 @@ function wall2() {
     // zD range -5 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
 
-    let floorCount = 0;
-    for (let zD = -1 * wallWidth; wallWidth <= 5; zD++) {
+    // let floorCount = 0;
+    // for (let zD = -1 * wallWidth; wallWidth <= 5; zD++) {
                 
-        for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
+    //     for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
             
-            let me = magik.hic();
-            me.setX(me.getX() + xD);
-            me.setY(me.getY() + yD);
-            me.setZ(me.getZ() + zD);
+    //         let me = magik.hic();
+    //         me.setX(me.getX() + xD);
+    //         me.setY(me.getY() + yD);
+    //         me.setZ(me.getZ() + zD);
 
-            me.getBlock().setType(targetType);
-            // clearCount++;
-            floorCount++;
+    //         me.getBlock().setType(targetType);
+    //         // clearCount++;
+    //         floorCount++;
             
-            // magik.dixit(floorCount.toString());
+    //         // magik.dixit(floorCount.toString());
 
-        }
-        magik.dixit(zD.toString());
-        magik.dixit(wallWidth.toString());
-    }
+    //     }
+    //     magik.dixit(zD.toString());
+    //     magik.dixit(wallWidth.toString());
+    // }
 
     // if (original.toString() !== "AIR") {
     //     magik.dixit("This spell only works in the presence of air.");
