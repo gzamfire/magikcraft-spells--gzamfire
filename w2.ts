@@ -117,6 +117,7 @@ function wall2() {
     // zD range -5 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
 
+    let floorCount = 0;
     for (let zD = -1 * wallWidth; wallWidth <= 5; zD++) {
                 
         for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
@@ -128,6 +129,8 @@ function wall2() {
 
             me.getBlock().setType(targetType);
             // clearCount++;
+            floorCount++;
+            magik.dixit(floorCount.toString());
 
         }
     }
