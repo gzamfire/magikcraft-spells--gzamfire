@@ -11,7 +11,7 @@ function wall2() {
     let air = Material.AIR;
     const roofHeight = 4;
     const floorHeight = -1;
-    const wallWidth = 2;
+    const wallWidth = 3;
 
     let xD = wallWidth;
     // yD range 0 to 5 (height of wall)
