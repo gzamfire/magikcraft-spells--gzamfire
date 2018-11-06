@@ -1,9 +1,7 @@
 const magik = magikcraft.io;
 
-const magik = magikcraft.io;
-
-function wall2() {
-    let me = magik.hic();
+function wall3() {
+    let me = magik.aspecto();
     me.setY(me.getY() - 1);
     let original = magik.getPlugin().getServer().getWorlds()[0].getBlockAt(me).getType();
 
@@ -23,7 +21,7 @@ function wall2() {
                 
         for (let zD = -1 * wallWidth; zD <= wallWidth; zD++) {
             
-            let me = magik.hic();
+            let me = magik.aspecto();
             me.setX(me.getX() + xD);
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
@@ -42,7 +40,7 @@ function wall2() {
                 
         for (let zD = -1 * wallWidth; zD <= wallWidth; zD++) {
             
-            let me = magik.hic();
+            let me = magik.aspecto();
             me.setX(me.getX() + xD);
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
@@ -61,7 +59,7 @@ function wall2() {
                 
         for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
             
-            let me = magik.hic();
+            let me = magik.aspecto();
             me.setX(me.getX() + xD);
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
@@ -80,7 +78,7 @@ function wall2() {
                 
         for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
             
-            let me = magik.hic();
+            let me = magik.aspecto();
             me.setX(me.getX() + xD);
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
@@ -102,7 +100,7 @@ function wall2() {
                 
         for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
             
-            let me = magik.hic();
+            let me = magik.aspecto();
             me.setX(me.getX() + xD);
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
@@ -125,7 +123,7 @@ function wall2() {
                 
         for (let xD = -1 * wallWidth; xD <= wallWidth; xD++) {
             
-            let me = magik.hic();
+            let me = magik.aspecto();
             me.setX(me.getX() + xD);
             me.setY(me.getY() + yD);
             me.setZ(me.getZ() + zD);
@@ -177,7 +175,7 @@ function wall2() {
         for (let zD = -1 * wallWidth + 1; zD < wallWidth; zD++) {
                 
             for (let xD = -1 * wallWidth + 1; xD < wallWidth; xD++) {            
-                let me = magik.hic();
+                let me = magik.aspecto();
                 me.setX(me.getX() + xD);
                 me.setY(me.getY() + yD);
                 me.setZ(me.getZ() + zD);
@@ -191,4 +189,4 @@ function wall2() {
 
 }
 
-wall2();
+wall3();
