@@ -166,7 +166,7 @@ function wall2() {
     // }
 
 
-    let airCount = 0;
+    // let airCount = 0;
     // yD range 0 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
     // zD in the plane, xD in the plane
@@ -174,22 +174,18 @@ function wall2() {
 
         for (let zD = -1 * wallWidth + 1; zD < wallWidth; zD++) {
                 
-            for (let xD = -1 * wallWidth + 1; xD < wallWidth; xD++) {
-                
+            for (let xD = -1 * wallWidth + 1; xD < wallWidth; xD++) {            
                 let me = magik.hic();
                 me.setX(me.getX() + xD);
                 me.setY(me.getY() + yD);
                 me.setZ(me.getZ() + zD);
 
                 me.getBlock().setType(air);
-                airCount++;
             }
         }
         
 
     }
-    magik.dixit(airCount.toString() + " blocks cleared!")
-
 
 }
 
