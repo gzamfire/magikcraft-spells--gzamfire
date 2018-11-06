@@ -106,7 +106,7 @@ function wall2() {
             me.setZ(me.getZ() + zD);
 
             me.getBlock().setType(targetType);
-            // clearCount++;
+            magik.dixit(me.getX().to)
 
         }
     }
