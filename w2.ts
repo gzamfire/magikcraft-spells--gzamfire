@@ -130,10 +130,11 @@ function wall2() {
             me.getBlock().setType(targetType);
             // clearCount++;
             floorCount++;
-            magik.dixit(xD.toString());
-            magik.dixit(floorCount.toString());
+            
+            // magik.dixit(floorCount.toString());
 
         }
+        magik.dixit(zD.toString());
     }
 
     // if (original.toString() !== "AIR") {
