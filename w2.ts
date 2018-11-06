@@ -92,7 +92,7 @@ function wall2() {
 
     /* BUILD THE ROOF */
 
-    yD = roofHeight;
+    let yD = roofHeight;
     // zD range -5 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
 
