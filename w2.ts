@@ -8,10 +8,10 @@ function wall2() {
     const Material = magik.type('Material');
 
     let targetType = Material.GLASS;
-    let air = Material.GLASS;
-    const roofHeight = 5;
+    let air = Material.AIR;
+    const roofHeight = 3;
     const floorHeight = -1;
-    const wallWidth = 5;
+    const wallWidth = 3;
 
     let xD = wallWidth;
     // yD range 0 to 5 (height of wall)
