@@ -135,6 +135,7 @@ function wall2() {
 
         }
         magik.dixit(zD.toString());
+        magik.dixit(wallWidth.toString());
     }
 
     // if (original.toString() !== "AIR") {
