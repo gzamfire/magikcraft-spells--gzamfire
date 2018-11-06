@@ -106,9 +106,10 @@ function wall2() {
             me.setZ(me.getZ() + zD);
 
             me.getBlock().setType(targetType);
-            magik.dixit(me.getX().toString() + ", " + me.getY().toString() + ", " + me.getZ().toString())
+            
 
         }
+        magik.dixit(me.getX().toString() + ", " + me.getY().toString() + ", " + me.getZ().toString())
     }
 
     /* BUILD THE FLOOR */
