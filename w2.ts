@@ -9,8 +9,8 @@ function wall2() {
 
     let targetType = Material.GLASS;
     let air = Material.AIR;
-    const roofHeight = 4;
-    const floorHeight = -1;
+    const roofHeight = 3;
+    const floorHeight = -2;
     const wallWidth = 3;
 
     let xD = wallWidth;
