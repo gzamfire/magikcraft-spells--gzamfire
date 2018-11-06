@@ -113,7 +113,7 @@ function wall2() {
 
     /* BUILD THE FLOOR */
 
-    let yD = floorHeight;
+    yD = floorHeight;
     // zD range -5 to 5 (height of wall)
     // xD range -5 to 5 (width of wall)
 
