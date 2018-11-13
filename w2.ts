@@ -9,9 +9,13 @@ function wall2() {
 
     let targetType = Material.GLASS;
     let air = Material.AIR;
-    const roofHeight = 3;
-    const floorHeight = -2;
+    const roofHeight = 3 + 4;
+    const floorHeight = -2 + 4;
     const wallWidth = 3;
+
+    let teleportPoint = magik.hic();
+    teleportPoint.setY(me.getY() + 4);
+    magik.ianuae(teleportPoint);
 
     let xD = wallWidth;
     // yD range 0 to 5 (height of wall)
