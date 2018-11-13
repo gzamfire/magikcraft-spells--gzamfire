@@ -21,15 +21,19 @@ function bridge() {
     let segmentsMax = 100;
     let totalDeltaX = target.getX() - me.getX();
     let totalDeltaZ = target.getZ() - me.getZ();
+    let totalDeltaY = target.getY() - me.getY();
 
     // how many block per segment?
     let segmentDeltaX = totalDeltaX / segmentsMax;
     let segmentDeltaZ = totalDeltaZ / segmentsMax;
+    let segmentDeltaY = totalDeltaY / segmentsMax;
     
     // we will floor these values; 
     // we want an internal float representation but external int
     let actualX = me.getX();
     let actualZ = me.getZ();
+    let actualY = me.getY();
+
 
     magik.dixit("We shall build a bridge!");
 
@@ -38,12 +42,15 @@ function bridge() {
 
         let lastX = Math.floor(actualX);
         let lastZ = Math.floor(actualZ);
+        let lastY = Math.floor(actualY);
 
         actualX += segmentDeltaX;
         actualZ += segmentDeltaZ;
+        actualY += segmentDeltaY;
 
         me.setX(Math.floor(actualX));
         me.setZ(Math.floor(actualZ));
+        me.setY(Math.floor(actualY));
 
         // store the original type for revervsion
         let blockData = {
