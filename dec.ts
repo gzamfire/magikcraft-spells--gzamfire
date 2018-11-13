@@ -1,13 +1,7 @@
 const magik = magikcraft.io;
 
-function dec() {
-    // let original = magik.getPlugin().getServer().getWorlds()[0].getBlockAt(me).getType();
-    
-    let me = magik.aspecto();
-    // me.setX(me.getX() + 1);
-
-    const Material = magik.type('Material');
-
-    let targetType = Material.DIAMOND_HELMET;
-    me.getBlock().setType(targetType);
+function mc() {
+     magik.declaro('carrot');
 }
+
+mc();
