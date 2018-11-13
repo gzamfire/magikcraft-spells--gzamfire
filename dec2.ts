@@ -8,6 +8,6 @@ function dec() {
 
     const Material = magik.type('Material');
 
-    let targetType = Material.DIAMOND_HELMET;
+    let targetType = Material.LADDER;
     me.getBlock().setType(targetType);
 }
