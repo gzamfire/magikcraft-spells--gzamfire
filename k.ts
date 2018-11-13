@@ -1,6 +1,6 @@
 const magik = magikcraft.io;
 
-function k(playername) {
+function k() {
      magik.iacta("beaverdragoon77");
 }
 
