@@ -7,7 +7,7 @@ function wall2() {
 
     const Material = magik.type('Material');
 
-    let targetType = Material.DIAMOND_HELMET;
+    let targetType = Material.GLASS;
     let air = Material.AIR;
     const roofHeight = 3 + 4;
     const floorHeight = -2 + 4;
