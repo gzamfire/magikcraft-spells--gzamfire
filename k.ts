@@ -1,7 +1,7 @@
 const magik = magikcraft.io;
 
 function k() {
-     magik.iacta("beaverdragoon77");
+     magik.iacta("bravergragoon77");
 }
 
 k();
