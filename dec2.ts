@@ -3,7 +3,7 @@ const magik = magikcraft.io;
 function dec() {
     // let original = magik.getPlugin().getServer().getWorlds()[0].getBlockAt(me).getType();
     
-    let me = magik.aspecto();
+    let me = magik.hic();
     // me.setX(me.getX() + 1);
 
     const Material = magik.type('Material');
