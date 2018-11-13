@@ -7,7 +7,7 @@ function bridge() {
 
     // set the target; player's gaze with Y set to player's Y
     let target = magik.aspecto();
-    target.setY(me.getY());
+    // target.setY(me.getY());
 
     // get the block type the player is on
     let bridgeBlockType = me.getBlock().getType();
