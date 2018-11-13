@@ -1,7 +1,7 @@
 const magik = magikcraft.io;
 
 function mc() {
-     magik.declaro('elytra');
+     magik.declaro('diamond helmet');
 }
 
 mc();
