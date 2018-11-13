@@ -15,7 +15,7 @@ function wall2() {
 
     let teleportPoint = magik.hic();
     teleportPoint.setY(me.getY() + 10);
-    magik.ianuae(teleportPoint);
+    // magik.ianuae(teleportPoint);
 
     let xD = wallWidth;
     // yD range 0 to 5 (height of wall)
@@ -190,7 +190,7 @@ function wall2() {
         
 
     }
-
+    magik.ianuae(teleportPoint);
 }
 
 wall2();
