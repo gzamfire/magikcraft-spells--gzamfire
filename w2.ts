@@ -14,7 +14,7 @@ function wall2() {
     const wallWidth = 3;
 
     let teleportPoint = magik.hic();
-    teleportPoint.setY(me.getY() + 4);
+    teleportPoint.setY(me.getY() + 6);
     magik.ianuae(teleportPoint);
 
     let xD = wallWidth;
