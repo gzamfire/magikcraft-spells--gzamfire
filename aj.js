@@ -24,7 +24,7 @@ function bridgeMe() {
         me.getBlock().setType(Material.GLASS);
 
         // count++;
-        magik.dixit(count);
+        magik.dixit("count");
 }
 
 function speak(words) {
