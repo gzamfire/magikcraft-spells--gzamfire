@@ -5,7 +5,7 @@ const Material = magik.type('Material');
 
 function bridgeMe2() {
 
-    if (count >= 100) {
+    if (count >= 1000) {
         return;
     }
     
