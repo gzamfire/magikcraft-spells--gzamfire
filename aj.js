@@ -17,7 +17,7 @@ function bridgeMe2() {
 
         count++;
         magik.dixit(count);
-    }, 100, 80, bridgeMe2);
+    }, 100, 0, bridgeMe2);
 }
 
 
@@ -31,7 +31,7 @@ function bridgeMe() {
         count++;
         magik.dixit(count);
 
-    }, 100, 80, bridgeMe2);
+    }, 100, 0, bridgeMe2);
         
 }
 
