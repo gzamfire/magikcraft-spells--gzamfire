@@ -15,6 +15,20 @@ function bridgeMe2() {
         me.setY(me.getY() - 1);
         me.getBlock().setType(Material.GLASS);
 
+        me.setX(me.getX() - 1);
+        me.getBlock().setType(Material.GLASS);
+        me.setZ(me.getZ() - 1);
+        me.getBlock().setType(Material.GLASS);
+        me.setZ(me.getZ() + 1);
+        me.getBlock().setType(Material.GLASS);
+
+        me.setX(me.getX() + 1);
+        me.getBlock().setType(Material.GLASS);
+        me.setZ(me.getZ() - 1);
+        me.getBlock().setType(Material.GLASS);
+        me.setZ(me.getZ() + 1);
+        me.getBlock().setType(Material.GLASS);
+
         count++;
         magik.dixit(count);
     }, 100, 0, bridgeMe2);
