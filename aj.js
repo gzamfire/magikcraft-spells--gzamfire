@@ -13,7 +13,7 @@ function airJordans() {
 
         count++;
         magik.dixit(count);
-    }, 100, 200);
+    }, 100, 100);
 
 
 }
