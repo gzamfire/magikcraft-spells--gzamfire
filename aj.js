@@ -21,7 +21,7 @@ function bridgeMe() {
     let count = 5;
     hi();
     magik.doNTimes(() => {
-        
+        hi();
         let me = magik.hic();
         me.setY(me.getY() - 1);
         me.getBlock().setType(Material.GLASS);
