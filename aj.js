@@ -1,6 +1,7 @@
 const magik = magikcraft.io;
 
 let count = 0;
+const Material = magik.type('Material');
 
 function bridgeMe2() {
     
@@ -17,18 +18,16 @@ function bridgeMe2() {
 
 
 function bridgeMe() {
-    const Material = magik.type('Material');
 
     magik.doNTimes(() => {
         let me = magik.hic();
         me.setY(me.getY() - 1);
         me.getBlock().setType(Material.GLASS);
 
-        // count++;
-        magik.dixit("count");
+        count++;
+        magik.dixit(count);
 
-    }, 100, 100);
-        speak("3");
+    }, 100, 100, bridgeMe2);
         
 }
 
