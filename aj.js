@@ -17,7 +17,7 @@ function bridgeMe2() {
 
 
 function bridgeMe() {
-
+const Material = magik.type('Material');
         speak("3");
         let me = magik.hic();
         me.setY(me.getY() - 1);
