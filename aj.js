@@ -29,13 +29,17 @@ function bridgeMe() {
     }, 100, 100, bridgeMe2);
 }
 
+function hi() {
+    magik.dixit("hey!");
+}
+
 function airJordans() {
 
     const Material = magik.type('Material');
 
+    hi();
     bridgeMe();
-
-
+    hi();
 }
 
 airJordans();
