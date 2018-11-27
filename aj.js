@@ -17,7 +17,7 @@ function bridgeMe2() {
 
 
 function bridgeMe() {
-    
+    let count = 5;
     magik.doNTimes(() => {
         
         let me = magik.hic();
