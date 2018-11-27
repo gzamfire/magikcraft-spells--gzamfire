@@ -4,6 +4,10 @@ let count = 0;
 const Material = magik.type('Material');
 
 function bridgeMe2() {
+
+    if (count >= 100) {
+        return;
+    }
     
     magik.doNTimes(() => {
         
@@ -13,7 +17,7 @@ function bridgeMe2() {
 
         count++;
         magik.dixit(count);
-    }, 100, 100);
+    }, 100, 80);
 }
 
 
