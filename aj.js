@@ -17,14 +17,16 @@ function bridgeMe2() {
 
 
 function bridgeMe() {
+    hi();
     let count = 5;
+    hi();
     magik.doNTimes(() => {
         
         let me = magik.hic();
         me.setY(me.getY() - 1);
         me.getBlock().setType(Material.GLASS);
 
-        count++;
+        // count++;
         magik.dixit(count);
     }, 100, 100);
 }
