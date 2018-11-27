@@ -28,7 +28,7 @@ function bridgeMe() {
 
         // count++;
         magik.dixit(count);
-    }, 100, 100);
+    }, 10, 100);
 }
 
 function hi() {
