@@ -1,10 +1,9 @@
 const magik = magikcraft.io;
 
-function airJordans() {
+let count = 0;
 
-    const Material = magik.type('Material');
-
-    let count = 0;
+function bridgeMe2() {
+    
     magik.doNTimes(() => {
         
         let me = magik.hic();
@@ -14,6 +13,27 @@ function airJordans() {
         count++;
         magik.dixit(count);
     }, 100, 100);
+}
+
+
+function bridgeMe() {
+    
+    magik.doNTimes(() => {
+        
+        let me = magik.hic();
+        me.setY(me.getY() - 1);
+        me.getBlock().setType(Material.GLASS);
+
+        count++;
+        magik.dixit(count);
+    }, 100, 100, bridgeMe2);
+}
+
+function airJordans() {
+
+    const Material = magik.type('Material');
+
+    
 
 
 }
