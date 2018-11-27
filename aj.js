@@ -18,7 +18,7 @@ function bridgeMe2() {
 
 function bridgeMe() {
 
-        hi();
+        hi("3");
         let me = magik.hic();
         me.setY(me.getY() - 1);
         me.getBlock().setType(Material.GLASS);
@@ -27,17 +27,17 @@ function bridgeMe() {
         magik.dixit(count);
 }
 
-function hi() {
-    magik.dixit("hey!");
+function speak(words) {
+    magik.dixit(words);
 }
 
 function airJordans() {
 
     const Material = magik.type('Material');
 
-    hi();
+    hi("1");
     bridgeMe();
-    hi();
+    hi("2");
 }
 
 airJordans();
