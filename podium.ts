@@ -14,6 +14,6 @@ function podium() {
 
     me.setY(me.getY() + 1);
     magik.ianuae(me);
-
-
 }
+
+podium();
