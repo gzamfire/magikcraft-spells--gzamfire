@@ -6,7 +6,7 @@ function goTo() {
     let loc = sender.getEyeLocation();//.getDirection();
     magik.dixit(loc.toString());
     
-    magik.ianuae(sender.location);
+    magik.ianuae(loc);
 }
 
 goTo();
