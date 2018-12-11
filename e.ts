@@ -4,8 +4,8 @@ var magik = magikcraft.io;
 function e_helper(times) {
 
     let sender = magik.getPlugin().getServer().getPlayer("GurkanStarBro");
-    let n = 50;
-    let delay = 200;
+    let n = 5;
+    let delay = 500;
 
     sender.location.getWorld().createExplosion(magik.aspecto(),n);        
     times--;
