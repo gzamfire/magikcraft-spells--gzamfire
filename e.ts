@@ -11,7 +11,7 @@ function e() {
     magik.dixit("hi");
     let sender = magik.getPlugin().getServer().getPlayer("GurkanStarBro");
     magik.dixit(sender.toString());
-
+magik.dixit(sender.location.toString());
     // magik.
         
 
