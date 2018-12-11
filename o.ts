@@ -7,8 +7,8 @@ function randRange(lower, higher) {
 function ori() {
     let me = magik.hic();
 
-    let randX = randRange(-500, 500);
-    let randZ = randRange(-500, 500);
+    let randX = randRange(-5000, 5000);
+    let randZ = randRange(-5000, 5000);
     me.setX(randX);
     me.setY(63);
     me.setZ(randZ);
