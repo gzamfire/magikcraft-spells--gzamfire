@@ -16,4 +16,4 @@ function podium(steps) {
     magik.ianuae(me);
 }
 
-magik.invoke(steps);
+magik.invoke(podium);
