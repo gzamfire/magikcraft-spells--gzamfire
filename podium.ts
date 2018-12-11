@@ -3,7 +3,7 @@ const magik = magikcraft.io;
 let count = 0;
 const Material = magik.type('Material');
 
-function podium(steps) {
+function podium() {
 
     let me = magik.hic();
 
@@ -16,4 +16,4 @@ function podium(steps) {
     magik.ianuae(me);
 }
 
-magik.invoke(podium);
+podium();
