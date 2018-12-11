@@ -2,7 +2,12 @@
 var magik = magikcraft.io;
 
 // explode  
-function e(n, repeats, delay) {
+function e() {
+
+    let n = 1;
+    let repeats = 1;
+    let delay = 200;
+
     magik.dixit("hi");
     let sender = magik.getPlugin().getServer().getPlayer("GurkanStarBro");
     magik.dixit(sender.toString());
@@ -33,3 +38,5 @@ function e(n, repeats, delay) {
         magik.dixit("e done");
     }
 }
+
+e()
