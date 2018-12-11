@@ -1,44 +1,36 @@
 
 var magik = magikcraft.io;
 
-// explode  
-function e() {
+function e_helper(times) {
 
-    let n = "1";
-    let repeats = "1";
-    let delay = "200";
-
-    magik.dixit("hi");
     let sender = magik.getPlugin().getServer().getPlayer("GurkanStarBro");
-//     magik.dixit(sender.toString());
-// magik.dixit(sender.location.toString());
-// magik.dixit(sender.location.getWorld().toString());
-    // magik.
-        
+    let n = 30;
+    let delay = 200;
 
-    var sender2 = sender;
-    n = parseInt(n) || 30;
-    repeats = parseInt(repeats) || 10;
-    delay = parseInt(delay) || 200;
-    magik.dixit("Check 1");
     sender.location.getWorld().createExplosion(magik.aspecto(),n);        
-    repeats--;
-    //magik.dixit(sender.isSneaking() ? "yes" : "no");
-    if (sender.isSneaking()) {
-        magik.dixit("e done via sneak");
-        return;
-    }
-    if (repeats > 0) {
+    times--;
+
+    if (times > 0) {
         var task = magik.setTimeout(
             function() {
-                sender = sender2;
-                e(n, repeats, delay);
+                // sender = sender2;
+                magik.dixit(times + " times left.")
+                e_helper(times);
+                
             },
             delay
         );
     } else {
-        magik.dixit("e done");
+        magik.dixit("Done.");
     }
+
+}
+
+// explode  
+function e() {
+
+    e_helper(10);
+    
 }
 
 e()
