@@ -20,6 +20,7 @@ magik.dixit(sender.location.getWorld().toString());
     n = parseInt(n) || 30;
     repeats = parseInt(repeats) || 1;
     delay = parseInt(delay) || 200;
+    magik.dixit("Check 1");
     sender.location.getWorld().createExplosion(magik.aspecto(),n);        
     repeats--;
     //magik.dixit(sender.isSneaking() ? "yes" : "no");
