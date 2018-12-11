@@ -5,7 +5,7 @@ var magik = magikcraft.io;
 function e(n, repeats, delay) {
     let sender = magik.getPlugin().getServer().getPlayer("GurkanStarBro");
 
-    magik.
+    // magik.
         
 
     var sender2 = sender;
