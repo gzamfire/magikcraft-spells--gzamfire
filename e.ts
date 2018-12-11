@@ -18,7 +18,7 @@ function e() {
 
     var sender2 = sender;
     n = parseInt(n) || 30;
-    repeats = parseInt(repeats) || 1;
+    repeats = parseInt(repeats) || 10;
     delay = parseInt(delay) || 200;
     magik.dixit("Check 1");
     sender.location.getWorld().createExplosion(magik.aspecto(),n);        
